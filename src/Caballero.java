@@ -1,9 +1,26 @@
 public class Caballero {
-    String nombre;
-    String constellation;
+    private String nombre;
+    private String constellation;
     int cosmos;
     Dios dios;
+
+    public String getConstellation() {
+        return constellation;
+    }
+
+    public void setConstellation(String constellation) {
+        this.constellation = constellation;
+    }
+
     Armadura armadura;
+
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
 
     //Sobrescritura
     @Override
@@ -19,6 +36,7 @@ public class Caballero {
 
     //Constructor por defecto
     public Caballero() {
+        burnCosmos(10);
     }
 
     //Sobrecarga de metodos
@@ -26,7 +44,7 @@ public class Caballero {
        System.out.println(this.constellation +" esta usando "+(this.cosmos*2)+" cosmos");
        this.cosmos=this.cosmos-10;
    }
-   public void burnCosmos(int c)
+   private void burnCosmos(int c)
    {
        this.cosmos=this.cosmos*c;
    }
