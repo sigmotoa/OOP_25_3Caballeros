@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner leer = new Scanner(System.in);
-        System.out.println("Nicolas");
+        System.out.println("Nicolas".toUpperCase());
 
         Caballero c1 = new Caballero("Seiya","Gato");
         System.out.println(c1.getNombre());
