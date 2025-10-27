@@ -4,13 +4,13 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner leer = new Scanner(System.in);
+        System.out.println("Nicolas");
 
         Caballero c1 = new Caballero("Seiya","Gato");
         System.out.println(c1.getNombre());
         c1.setNombre("Seiyita");
         System.out.println(c1.getNombre());
         c1.setConstellation("Pegaso");
-        c1.burn
         c1.cosmos = 100;
         c1.dios = Dios.ATENA;
         Bronce b1 = new Bronce();
